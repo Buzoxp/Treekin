@@ -20,7 +20,7 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg nav--color navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#"> <img src="assets/img/logo.svg" alt="Logo"> </a>
+          <a class="navbar-brand" href="#"> <img class="nav--img" src="assets/img/logo.svg" alt="Logo"> </a>
   
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,35 +51,108 @@
       </nav>
 
       <!--Seccion principal-->
-<header class="header container-fluid ">
-    <div class="row">
-        
-       <div class="col-sm-10 my-5 pt-5 d-inline-block trekking">
-            <h1><strong> Haz Trekking sin Parar </strong></h1>
-            <h3 class="pt-3">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</h3>
-        </div>
-    
-            </div>
-       </header>
+<header class="header">
+
+    <div class="container-fluid">
+         <div class="container--header">
+                    <div class="header--texto">
+                        <h1 class="header--texto--titulo">Haz Trekking sin Parar</h1>
+                        <p class="header--texto--texto">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición. </p>
+                    </div>
+                
+                    <div class="header--img">
+                        <img src="assets/img/bg-hero.svg" alt="img montaña">
+                     </div>
+          </div>
+    </div>
+
+</header>
 
    <!-- seccion caracteristicas -->
    <section class="caracteristicas">
-       <div class="container">
-           <div class="row">
-               <div class="col-sm-10 my-5">
-                   <h2>CARACTERISTICAS</h2>
-                   <img src="assets/img/bar-graph.svg" alt=graficos>
+         <div class="container">
+             <div class="container--caracteristicas">
+                <div>
+                    <h2 class="caracteristicas--titulo">Caracteristicas</h2>
+                </div>
+                <div>
+                    <img class="caracteristicas--grafico" src="assets/img/bar-graph.svg" alt="Grafico">
+                </div>
+                <div>
+                    <h4 class="caracteristicas--estadisticas">Estadisticas de tu progreso</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi ipsum praesentium dolorem corporis odit ex, id commodi distinctio! Facere distinctio saepe facilis eaque tempora aut tempore beatae debitis animi cupiditate.</p>
+                </div>
 
-               </div>
-
-           </div>
-
-       </div>
-   
+            
+        </div>
+        </div>
 
    </section>
-   
 
+   <!-- precios -->
+<section class="precios">
+        <div class="container">
+             <div class="container--precios">
+                    <div class="precios--titulo">
+                        <h3>PRECIOS</h3>
+                    </div>
+
+                    <div class="precios--cards">
+                            <div class="card carta" style="width: 18rem;">
+                                <div class="card-body">
+                                <h5 class="card-title">Trekk-in Free</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">$ 0 / mes</h6>
+                                <ul>
+                                   <li>Ver mapas creados por el usuario</li> 
+                                   <li>Conectar con otros usurios</li>
+                                </ul>
+                                <a href="#" class="card-link">boton</a>
+                                 </div>
+                            </div>
+                            <div class="card carta" style="width: 18rem;">
+                                <div class="card-body">
+                                <h5 class="card-title">Trekk-in Premium</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">$ 3500 / mes</h6>
+                                <ul>
+                                   <li>Ver mapas creados por el usuario</li> 
+                                   <li>Conectar con otros usurios</li>
+                                   <li>Definir mejores rutas</li> 
+                                   <li>Mapas Offline</li>
+                                   <li>Integracion con otras aplicaciones</li>
+                                </ul>
+                                <a href="#" class="card-link">boton</a>
+                                 </div>
+                            </div>
+
+                    </div>
+             </div>   
+        </div>
+ </section>
+   
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="container--footer">
+            <div>
+                <p>Legal</p>
+            </div>
+            <div>
+                <p>Cookie</p>
+            </div>
+            <div>
+                <p>Sobre anuncios</p>
+            </div>
+            
+            
+        </div>
+        <div class="container--copyright">
+            <div>
+                <p class="footer--copyright">© 2018 trekk-in SPA</p>
+            </div>
+        </div>
+    </div>
+   </footer>
+      
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

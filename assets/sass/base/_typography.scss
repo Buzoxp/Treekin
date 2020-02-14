@@ -1,0 +1,42 @@
+.header--texto--titulo {
+    font-family: $raleway;
+    font-weight: 700;
+    width: 70%;
+   // padding-left: 2vw;
+   width: 80%;
+
+}
+
+.header--texto--texto {
+    font-family: $raleway;
+    font-weight: 400;
+
+}
+
+.caracteristicas--titulo {
+    font-family: $raleway;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 8vmax;
+}
+.caracteristicas--estadisticas {
+    font-family: $raleway;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 4vmax;
+}
+
+.container--footer {
+    font-family: $raleway;
+    font-weight: 400;
+    font-size: $x-small;
+    padding-top: 4vmax;
+    padding-bottom: 2vmax;
+}
+
+.container--copyright {
+    font-family: $raleway;
+    font-weight: 400;;
+    font-size: $x-small;
+
+}

@@ -2,27 +2,149 @@ a {
   color: black;
 }
 
+.header--texto--titulo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  width: 70%;
+  width: 80%;
+}
+
+.header--texto--texto {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.caracteristicas--titulo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 8vmax;
+}
+
+.caracteristicas--estadisticas {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 4vmax;
+}
+
+.container--footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 4vmax;
+  padding-bottom: 2vmax;
+}
+
+.container--copyright {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .nav--color {
   background-color: #fff;
 }
 
-.maincontainer {
+.nav--img {
+  padding: 0.8rem;
+}
+
+.container--header {
+  display: grid;
   width: 100%;
-  position: fixed;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.montana {
-  width: 90%;
-  box-sizing: border-box;
+.header--texto {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 1rem;
 }
 
-.header {
-  background-image: url("../img/bg-hero.svg");
+.header--img {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+.header--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.precios {
+  background-image: url(../img/bg-price.svg);
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
-  background-position: right;
-  width: 100%;
-  height: 50rem;
   background-size: cover;
+  background-position: 72%;
+}
+
+.container--precios {
+  display: flex;
+  flex-direction: column;
+}
+
+.precios--titulo {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.precios--cards {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.card {
+  justify-content: center;
+}
+
+.container--caracteristicas {
+  padding-top: 10vmax;
+}
+
+.caracteristicas--grafico {
+  text-align: center;
+  position: relative;
+  right: -2rem;
+  padding-bottom: 7vmax;
+}
+
+.carta {
+  margin-bottom: 8vmax;
+}
+
+.footer {
+  background-color: #221d23;
+}
+
+.container--footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.container--copyright {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer--copyright {
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

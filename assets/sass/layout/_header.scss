@@ -1,20 +1,74 @@
-.maincontainer {
-    width: 100%; 
-    position: fixed; 
+.container--header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header--texto {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    padding: 1rem;
+}
+
+.header--img {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.precios {
+    background-image: url(../img/bg-price.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72%;
     
 
 }
 
-.montana {
-    width: 90%;
-   box-sizing: border-box;
+.container--precios {
+    display: flex;
+    flex-direction: column;
+   
 }
 
-.header {
-    background-image: url("../img/bg-hero.svg");
-   background-repeat: no-repeat;
-   background-position: right;
-    width: 100%;
-    height: 50rem;
-   background-size: cover;
+.precios--titulo {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    color: $color-white;
+}
+
+.precios--cards {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+}
+
+.card {
+    justify-content: center;
+}
+
+.container--caracteristicas {
+    padding-top: 10vmax;
+}
+
+.caracteristicas--grafico {
+text-align: center;
+position: relative;
+right: -2rem;
+padding-bottom: 7vmax;
+}
+
+.carta {
+    margin-bottom: 8vmax;
 }

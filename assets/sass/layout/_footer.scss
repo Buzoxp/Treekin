@@ -1,0 +1,30 @@
+.footer {
+   background-color: $color-raisingblack;
+}
+
+.container--footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container--copyright{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+}
+.footer--copyright {
+   
+    text-align: center;
+}
+
+footer {
+    p {
+       color: $color-white;
+      
+    }
+}
