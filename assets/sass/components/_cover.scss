@@ -1,0 +1,35 @@
+.card-title {
+    font-family: $open-sans;
+    font-weight: 500;
+    color: $color-onyx !important;
+    font-size: $medium;
+    padding-top: 2.5vmax;
+    padding-bottom: 2vmax;
+}
+
+.card-subtitle {
+    font-family: $raleway;
+    font-weight: 700;
+    font-size: $x-large;
+    color: black !important;
+    padding-bottom: 3vmax;
+    border-bottom: 1.5px solid $color-gray;
+}
+.card-item {
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: $small;
+    padding-top: 2.5vmax;
+    padding-bottom: 1vmax;
+    width: 80%;
+}
+
+.card-list {
+    border-bottom: 1.5px solid $color-gray;
+    padding-bottom: 3vmax;
+    width: 100%;
+}
+button {
+    padding-top: 3vmax;
+    padding-bottom: 4vmax;
+}
