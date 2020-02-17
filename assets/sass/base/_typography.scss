@@ -18,6 +18,9 @@
     font-weight: 700;
     text-align: center;
     padding-bottom: 8vmax;
+    @include respond-to('medium'){
+        padding-bottom: 4vmax;
+     } 
 }
 .caracteristicas--estadisticas {
     font-family: $raleway;

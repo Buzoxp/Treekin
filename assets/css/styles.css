@@ -20,6 +20,11 @@ a {
   text-align: center;
   padding-bottom: 8vmax;
 }
+@media (min-width: 768px) {
+  .caracteristicas--titulo {
+    padding-bottom: 4vmax;
+  }
+}
 
 .caracteristicas--estadisticas {
   font-family: "Raleway", sans-serif;
@@ -60,11 +65,26 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+@media (min-width: 768px) {
+  .container--header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
 
 .header--texto {
   grid-column: 1/3;
   grid-row: 1/2;
   padding: 1rem;
+}
+@media (min-width: 768px) {
+  .header--texto {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 64%;
+    margin-top: 6.5rem;
+    margin-left: 6.5rem;
+  }
 }
 
 .header--img {
@@ -76,6 +96,11 @@ a {
   height: 100%;
   object-fit: cover;
 }
+@media (min-width: 768px) {
+  .header--img {
+    grid-row: 1/2;
+  }
+}
 
 .precios {
   background-image: url(../img/bg-price.svg);
@@ -85,6 +110,12 @@ a {
   background-size: cover;
   background-position: 90% 0%;
   padding-top: 5vmax;
+  padding-top: 5vmax;
+}
+@media (min-width: 768px) {
+  .precios {
+    padding-top: 0vmax;
+  }
 }
 
 .container--precios {
@@ -106,6 +137,12 @@ a {
   flex-wrap: nowrap;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .precios--cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .card {
   justify-content: center;
@@ -113,6 +150,39 @@ a {
 
 .container--caracteristicas {
   padding-top: 10vmax;
+}
+@media (min-width: 768px) {
+  .container--caracteristicas {
+    padding-top: 1vmax;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 1fr;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .item1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: 768px) {
+  .item2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-items: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .item3 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 80%;
+    text-align: left;
+  }
 }
 
 .caracteristicas--grafico {
@@ -124,6 +194,11 @@ a {
 
 .carta {
   margin-bottom: 8vmax;
+}
+@media (min-width: 768px) {
+  .carta {
+    width: 20rem;
+  }
 }
 
 .footer {
