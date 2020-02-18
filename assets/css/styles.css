@@ -1,3 +1,11 @@
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 a {
   color: black;
 }
@@ -108,13 +116,14 @@ a {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 90% 0%;
+  background-position: 69% 0%;
   padding-top: 5vmax;
   padding-top: 5vmax;
 }
 @media (min-width: 768px) {
   .precios {
-    padding-top: 0vmax;
+    padding-top: 10vmax;
+    background-position: 37% 0%;
   }
 }
 
@@ -190,15 +199,33 @@ a {
   position: relative;
   right: -2rem;
   padding-bottom: 7vmax;
+  animation: aparecer 5s infinite;
 }
 
-.carta {
+.carta2 {
   margin-bottom: 8vmax;
 }
 @media (min-width: 768px) {
-  .carta {
-    width: 20rem;
+  .carta2 {
+    margin-left: 4vmax;
   }
+}
+.carta2:hover {
+  box-shadow: 0px 10px 18px #221d23;
+}
+
+.carta1 {
+  margin-bottom: 8vmax;
+}
+@media (min-width: 768px) {
+  .carta1 {
+    margin-left: 16vmax;
+    margin-top: -15.5vmax;
+    justify-content: right;
+  }
+}
+.carta1:hover {
+  box-shadow: 0px 10px 18px #221d23;
 }
 
 .footer {
@@ -208,8 +235,14 @@ a {
 .container--footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .container--footer {
+    text-align: right;
+  }
 }
 
 .container--copyright {
@@ -222,9 +255,22 @@ a {
 .footer--copyright {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .footer--copyright {
+    margin-top: 4vmax;
+    margin-left: 30vmax;
+  }
+}
 
 footer p {
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container--f {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+  }
 }
 
 .card-title {

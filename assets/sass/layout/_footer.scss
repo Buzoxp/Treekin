@@ -1,14 +1,18 @@
 .footer {
    background-color: $color-raisingblack;
+   
 }
 
 .container--footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-   
+    text-align: center;
     align-items: center;
     justify-content: center;
-    
+    @include respond-to('medium'){
+        text-align: right; 
+    }
+       
 }
 
 .container--copyright{
@@ -16,15 +20,28 @@
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
+    
 }
+
 .footer--copyright {
    
     text-align: center;
+    @include respond-to('medium'){
+        margin-top: 4vmax;
+        margin-left: 30vmax;
+    }
 }
 
 footer {
     p {
        color: $color-white;
       
+    }
+}
+
+.container--f {
+    @include respond-to('medium'){
+        display: grid;
+        grid-template-columns: 45% 1fr;
     }
 }
